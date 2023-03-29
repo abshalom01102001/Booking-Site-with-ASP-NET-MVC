@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "My Services";
+}
+
+
+      <!--- Log In Layer ---->
+      <div class="login-layer">
+        <div class="login-wrapper">
+          <h3>Log In</h3>
+          <hr />
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" />
+          <div class="login-button" onclick="login()">
+            <h4>Log-in</h4>
+            <i class="bi bi-box-arrow-in-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="logout-button" onclick="logout()">
+        <h4>Log-out</h4>
+        <i class="bi bi-box-arrow-right"></i>
+      </div>
+
+      <div class="book-tools"></div>
+      <div class="booked-session">
+        <h3>Scheduled Book Sessions</h3>
+        <hr />
+        <div class="booked-flex" id="booked-flex"></div>
+      </div>
+
+      <div class="services">
+        <div class="photography">
+          <h3><i class="bi bi-camera"></i>Photography Session</h3>
+          <h4 onclick="bookButton()">Book Now</h4>
+        </div>
+        <div class="web-development">
+          <h3><i class="bi bi-layout-wtf"></i>Web Development</h3>
+          <h4 class="unavailable-button">Unavailable</h4>
+        </div>
+      </div>
+
+      <div class="book" id="book">
+        <h3>Book Your Photography Session</h3>
+        <hr />
+        <div class="form-grid">
+          <label for="name">Name:</label>
+          <div>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" required />
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" required />
+          </div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" />
+          <label for="address">Address:</label>
+          <input type="text" id="address" />
+          <label for="session-location">Session Location:</label>
+          <input type="text" id="session-location" />
+          <label for="session-schedule">Session Date & Time:</label>
+          <div>
+            <label for="session-date">Date:</label>
+            <input type="date" id="session-date" />
+            <label for="session-time">Time:</label>
+            <input type="time" id="session-time" />
+          </div>
+        </div>
+        <h4 onclick="submitButton()">Submit</h4>
+      </div>
